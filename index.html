@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="yandex-verification" content="e42ff462e17d2f21" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 способов заработка в интернете без вложений</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4895ef;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: #f5f7fa;
+            transform: skewY(-3deg);
+            z-index: 1;
+        }
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .telegram-promo {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 30px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            position: relative;
+            z-index: 2;
+            animation: pulse 2s infinite;
+        }
+        
+        .telegram-promo a {
+            background-color: white;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 12px 25px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .telegram-promo a:hover {
+            background-color: var(--accent);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .telegram-promo a::before {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMm0tMS45OCAxNS4wNmMtLjA3IDAtLjEzLS4wMS0uMi0uMDItLjE3LS4wMi0uMy0uMDgtLjQxLS4xNy0uMDktLjA4LS4xNS0uMTgtLjE5LS4yOS0uMDQtLjExLS4wNS0uMjItLjAzLS4zM2wuNTMtNC4xMUw2LjkgMTEuMjZjLS4xMS4wNy0uMjMuMDktLjM1LjA5LS4xNSAwLS4yOS0uMDYtLjM5LS4xNy0uMTMtLjEzLS4xOC0uMzEtLjEzLS40OGwyLjQ0LTcuNzljLjA0LS4xNS4xMy0uMjguMjYtLjM2LjEzLS4wOC4yOC0uMTEuNDMtLjA5LjE2LjAyLjMuMS40LjIxbDkuNjYgNi4xMmMuxNi4xLjI0LjI2LjI0LjQzIDAgLjE4LS4wOS4zNS0uMjQuNDRsLTQuNjQgMi44OC0uNzQgNS43NGMtLjAyLjE1LS4wOC4yOS0uMTguNDEtLjExLjEzLS4yNi4xOS0uNDIuMTl6Ii8+PC9zdmc+');
+            background-size: contain;
+            margin-right: 8px;
+        }
+        
+        .methods-container {
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .method-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .method-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+        }
+        
+        .method-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgba(67, 97, 238, 0.1);
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .method-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .method-desc {
+            color: #555;
+        }
+        
+        .method-details {
+            background-color: #f8f9fa;
+            border-left: 3px solid var(--accent);
+            padding: 15px;
+            border-radius: 0 5px 5px 0;
+            margin-top: 10px;
+        }
+        
+        .method-details h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--secondary);
+        }
+        
+        .method-details ul {
+            list-style-type: none;
+        }
+        
+        .method-details li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+        }
+        
+        .method-details li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        .earnings {
+            display: inline-block;
+            background-color: rgba(76, 201, 240, 0.2);
+            color: #0d6efd;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: #f5f7fa;
+            transform: skewY(3deg);
+            z-index: 1;
+        }
+        
+        .footer-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .method-card {
+                padding: 20px;
+            }
+            
+            .method-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="animate__animated animate__fadeIn">
+        <div class="container">
+            <h1>15 способов заработка в интернете без вложений</h1>
+            <p class="subtitle">Проверенные методы, которые работают в 2024 году. Начните зарабатывать уже сегодня!</p>
+            
+            <div class="telegram-promo animate__animated animate__pulse animate__infinite">
+                <p>Ещё больше способов заработка и актуальных вакансий в нашем Telegram-канале!</p>
+                <a href="https://t.me/MillsZarobotok" target="_blank">Подписаться на канал</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="methods-container">
+        <div class="container">
+            <!-- Способ 1 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">1</div>
+                <h2>Фриланс (Удалённая работа)</h2>
+                <div class="method-content">
+                    <p class="method-desc">Выполнение разовых или постоянных заказов на биржах фриланса.</p>
+                    
+                    <div class="method-details">
+                        <h3>Популярные направления:</h3>
+                        <ul>
+                            <li>Копирайтинг, рерайтинг (написание текстов)</li>
+                            <li>Программирование (верстка, разработка сайтов, ботов)</li>
+                            <li>Графический дизайн (логотипы, баннеры)</li>
+                            <li>Переводы текстов</li>
+                            <li>Озвучка и монтаж видео</li>
+                        </ul>
+                        
+                        <h3>Где искать заказы:</h3>
+                        <ul>
+                            <li><strong>Биржи:</strong> Kwork, FL.ru, Upwork, Freelancehunt</li>
+                            <li><strong>Телеграм-каналы</strong> с заказами</li>
+                            <li><strong>Соцсети (ВК, Facebook группы)</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">💰 От 500 руб. за простой заказ до 50 000+ руб. в месяц при постоянных клиентах</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 2 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">2</div>
+                <h2>Копирайтинг и рерайтинг</h2>
+                <div class="method-content">
+                    <p class="method-desc">Написание текстов для сайтов, блогов, соцсетей.</p>
+                    
+                    <div class="method-details">
+                        <h3>Виды работ:</h3>
+                        <ul>
+                            <li>SEO-статьи</li>
+                            <li>Посты для соцсетей</li>
+                            <li>Продающие тексты (лендинги, email-рассылки)</li>
+                            <li>Рерайтинг (переписывание чужих текстов своими словами)</li>
+                        </ul>
+                        
+                        <h3>Где продавать тексты:</h3>
+                        <ul>
+                            <li>Биржи: <strong>Text.ru, Etxt, Advego, ContentMonster</strong></li>
+                            <li>Прямые заказы через <strong>Telegram, ВК</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">📝 10–100 руб. за 1000 знаков (новички) | 200–500 руб. за 1000 знаков (опытные)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 3 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">3</div>
+                <h2>Веб-серфинг и платные опросы</h2>
+                <div class="method-content">
+                    <p class="method-desc">Просмотр сайтов, выполнение простых заданий, участие в опросах.</p>
+                    
+                    <div class="method-details">
+                        <h3>Сайты для заработка:</h3>
+                        <ul>
+                            <li><strong>Anketka.ru, Platnijopros.ru</strong> (опросы)</li>
+                            <li><strong>Seosprint, Socpublic</strong> (серфинг, задания)</li>
+                            <li><strong>Yandex Toloka</strong> (разметка данных для нейросетей)</li>
+                        </ul>
+                        
+                        <div class="earnings">🔄 50–500 руб. в день (зависит от активности)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 4 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">4</div>
+                <h2>Ввод капчи</h2>
+                <div class="method-content">
+                    <p class="method-desc">Расшифровка капчи (текста с картинки) для автоматизации сайтов.</p>
+                    
+                    <div class="method-details">
+                        <h3>Сервисы:</h3>
+                        <ul>
+                            <li><strong>Rucaptcha, 2Captcha</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">⌨️ 10–50 руб. в час (подходит для самых терпеливых)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 5 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">5</div>
+                <h2>Отзывы и комментарии</h2>
+                <div class="method-content">
+                    <p class="method-desc">Написание отзывов о товарах, услугах, компаниях.</p>
+                    
+                    <div class="method-details">
+                        <h3>Где писать:</h3>
+                        <ul>
+                            <li><strong>QComment, Irecommend, Отзовик</strong></li>
+                            <li><strong>Форумы и соцсети</strong> (заказные комментарии)</li>
+                        </ul>
+                        
+                        <div class="earnings">✍️ 10–200 руб. за отзыв</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 6 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">6</div>
+                <h2>Тестирование сайтов и приложений</h2>
+                <div class="method-content">
+                    <p class="method-desc">Поиск багов, оценка удобства интерфейса.</p>
+                    
+                    <div class="method-details">
+                        <h3>Площадки:</h3>
+                        <ul>
+                            <li><strong>Test.io, Utest, Яндекс.Толока</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">📱 200–5000 руб. за тест (зависит от сложности)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 7 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">7</div>
+                <h2>Заработок на соцсетях (SMM)</h2>
+                <div class="method-content">
+                    <p class="method-desc">Ведение групп, раскрутка аккаунтов.</p>
+                    
+                    <div class="method-details">
+                        <h3>Что можно делать:</h3>
+                        <ul>
+                            <li>Писать посты</li>
+                            <li>Настраивать таргет</li>
+                            <li>Привлекать подписчиков</li>
+                        </ul>
+                        
+                        <h3>Где брать заказы:</h3>
+                        <ul>
+                            <li><strong>Биржи (Kwork, FL.ru)</strong></li>
+                            <li><strong>Телеграм-каналы</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">📊 500–30 000 руб. за проект</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 8 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">8</div>
+                <h2>Создание и продажа NFT</h2>
+                <div class="method-content">
+                    <p class="method-desc">Рисование цифровых изображений и продажа их как NFT.</p>
+                    
+                    <div class="method-details">
+                        <h3>Площадки:</h3>
+                        <ul>
+                            <li><strong>OpenSea, Rarible</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">🎨 От $10 до бесконечности (если повезёт)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 9 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">9</div>
+                <h2>Блогинг (YouTube, Дзен, Telegram)</h2>
+                <div class="method-content">
+                    <p class="method-desc">Создание контента и монетизация через рекламу, донаты.</p>
+                    
+                    <div class="method-details">
+                        <h3>Как начать:</h3>
+                        <ul>
+                            <li>Снимать видео</li>
+                            <li>Писать статьи</li>
+                            <li>Вести канал в Telegram</li>
+                        </ul>
+                        
+                        <div class="earnings">📹 От 1000 руб. в месяц (новички) до миллионов</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 10 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">10</div>
+                <h2>Заработок на партнёрках</h2>
+                <div class="method-content">
+                    <p class="method-desc">Продвижение товаров и получение % с продаж.</p>
+                    
+                    <div class="method-details">
+                        <h3>Площадки:</h3>
+                        <ul>
+                            <li><strong>AliExpress (AliExpress Partner Program)</strong></li>
+                            <li><strong>Admitad, CityAds</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">🛒 От 500 руб. до 100 000+ руб. (зависит от трафика)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 11 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">11</div>
+                <h2>Транскрибация (расшифровка аудио в текст)</h2>
+                <div class="method-content">
+                    <p class="method-desc">Переводить аудио (подкасты, интервью) в текст.</p>
+                    
+                    <div class="method-details">
+                        <h3>Где искать заказы:</h3>
+                        <ul>
+                            <li><strong>Workzilla, Kwork</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">🎙️ 50–300 руб. за аудиочас</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 12 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">12</div>
+                <h2>Продажа фотографий на стоках</h2>
+                <div class="method-content">
+                    <p class="method-desc">Загружать свои фото на микростоки.</p>
+                    
+                    <div class="method-details">
+                        <h3>Площадки:</h3>
+                        <ul>
+                            <li><strong>Shutterstock, Adobe Stock</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">📸 $0.10–$50 за фото</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 13 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">13</div>
+                <h2>Удалённая работа (официальный найм)</h2>
+                <div class="method-content">
+                    <p class="method-desc">Работа в компании удалённо (оператор, менеджер).</p>
+                    
+                    <div class="method-details">
+                        <h3>Где искать:</h3>
+                        <ul>
+                            <li><strong>HH.ru, Remote Job, Telegram-каналы</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">💼 От 15 000 руб. (зависит от должности)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 14 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">14</div>
+                <h2>Заработок на играх</h2>
+                <div class="method-content">
+                    <p class="method-desc">Прокачка аккаунтов, продажа игровых предметов.</p>
+                    
+                    <div class="method-details">
+                        <h3>Где продавать:</h3>
+                        <ul>
+                            <li><strong>FunPay, PlayerAuctions</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">🎮 От 500 руб. до 50 000 руб.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Способ 15 -->
+            <div class="method-card animate__animated animate__fadeInUp">
+                <div class="method-number">15</div>
+                <h2>Облачный майнинг (бесплатные сервисы)</h2>
+                <div class="method-content">
+                    <p class="method-desc">Использование сервисов, которые дают бесплатные мощности.</p>
+                    
+                    <div class="method-details">
+                        <h3>Примеры:</h3>
+                        <ul>
+                            <li><strong>CryptoTab (майнинг через браузер)</strong></li>
+                        </ul>
+                        
+                        <div class="earnings">⛏️ Небольшой, но пассивный доход</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h2 class="animate__animated animate__fadeIn">Хотите больше способов заработка?</h2>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">Подписывайтесь на наш Telegram-канал с актуальными методами и вакансиями!</p>
+                
+                <div class="telegram-promo animate__animated animate__pulse animate__infinite animate__delay-2s">
+                    <a href="https://t.me/MillsZarobotok" target="_blank">Подписаться на https://t.me/MillsZarobotok</a>
+                </div>
+                
+                <p class="animate__animated animate__fadeIn animate__delay-3s" style="margin-top: 30px;">© 2024 Все способы проверены и работают. Начните зарабатывать уже сегодня!</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
